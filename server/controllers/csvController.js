@@ -9,7 +9,6 @@ exports.process = async (req, res) => {
     if(req.file){
         try {
             const data = await csv.parse(req.file.path);
-            // res.redirect(200, '/dashboard')
             res.status(200).json(data);
         } catch (error) {
             res.status(500).send(error.message);

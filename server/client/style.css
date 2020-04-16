@@ -23,6 +23,20 @@ a:hover {
   color: #179b77;
 }
 
+thead {
+  color:black;
+}
+tbody {
+  color:blue;
+}
+tfoot {
+  color:red;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
 .form {
   background: rgba(19, 35, 47, 0.9);
   padding: 40px;
@@ -211,7 +225,7 @@ textarea {
   width: 100%;
 }
 .verticalChart .singleBar {
-  width: 5%;
+  width: 8%;
   float: left;
   margin-left: 0.5%;
   margin-right: 0.5%;
