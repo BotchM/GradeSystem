@@ -8,7 +8,10 @@ COPY server/package*.json ./
 
 RUN npm install
 
+expose 12345
+
+expose 3306
+
 COPY server/ ./
 
-EXPOSE 8080
 CMD [ "npm", "start" ] 
