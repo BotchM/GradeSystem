@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <ul class="chart">
+        <li>
+            <span style="height:5%" title="A+"></span>
+        </li>
+        <li>
+            <span style="height:70%" title="A"></span>
+        </li>
+        <li>
+            <span style="height:200%" title="A-"></span>
+        </li>
+        <li>
+            <span style="height:63%" title="B+"></span>
+        </li>
+        <li>
+            <span style="height:15%" title="B"></span>
+        </li>
+        <li>
+            <span style="height:15%" title="B-"></span>
+        </li>
+        <li>
+            <span style="height:15%" title="C+"></span>
+        </li>
+        <li>
+            <span style="height:15%" title="C"></span>
+        </li>
+        <li>
+            <span style="height:15%" title="C-"></span>
+        </li>
+        <li>
+            <span style="height:15%" title="D"></span>
+        </li>
+        <li>
+            <span style="height:15%" title="F"></span>
+        </li>
+    </ul>
+
+    <script src="script.js" async defer></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+.chart {
+    display: table;
+    table-layout: fixed;
+    width: 60%;
+    max-width: 700px;
+    height: 200px;
+    margin: 0 auto;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 2%, rgba(0, 0, 0, 0) 2%);
+    background-size: 100% 50px;
+    background-position: left top;
+  }
+  .chart li {
+    position: relative;
+    display: table-cell;
+    vertical-align: bottom;
+    height: 200px;
+  }
+  .chart span {
+    margin: 0 1em;
+    display: block;
+    background: rgba(209, 236, 250, 0.75);
+    animation: draw 1s ease-in-out;
+  }
+  .chart span:before {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    padding: 5px 1em 0;
+    display: block;
+    text-align: center;
+    content: attr(title);
+    word-wrap: break-word;
+  }
+  
+  @keyframes draw {
+    0% {
+      height: 0;
+    }
+  }
+  
