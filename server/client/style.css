@@ -83,6 +83,13 @@ table, th, td {
   display: none;
 }
 
+#logout{
+  position:absolute;
+  top:0;
+  right:0;
+  background: #1ab188;
+}
+
 h1 {
   text-align: center;
   color: #ffffff;

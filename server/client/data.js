@@ -100,7 +100,7 @@ window.onload = () => {
     }
 
     const cutOff = document.querySelector('#cutOff');
-    cutOff.addEventListener('change', (event) => {
+    cutOff.addEventListener('input', (event) => {
         const value = event.target.value * 1;
         const key = event.target.name;
 

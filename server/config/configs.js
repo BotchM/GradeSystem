@@ -18,7 +18,7 @@ require('dotenv').config({path: path.join(__dirname, '../.env')})
  */
 module.exports = app => {
   app.use(session({
-    secret: 'somerandonstuffs',
+    secret: 'finalproject',
     resave: false,
     saveUninitialized: false,
     cookie: {
